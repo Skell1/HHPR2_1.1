@@ -61,7 +61,7 @@ class Region {
 
     public void setEfficiency() {
         findTotalArea();
-        if (area>2) {
+        if (area>=2) {
             efficiency = (double) area / getTotalArea();
         }
     }
