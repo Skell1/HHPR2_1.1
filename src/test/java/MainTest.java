@@ -373,5 +373,39 @@ public class MainTest {
                 "1 0 1 1 1 0 1 0 0 0 1 1 1 0 1 0 1 1 0 1 1 1 1 1 0 0 1 0 0 0 0 1 0 1 0 0 0 1 0 0 1 0 0 0 0 1 0 0 1 1 1 0 0 0 1 1 0 0 1 1 1 0 0 0 0 1 1 0 0 0 1 1 1 1 0 0 1 1 0 1 0 1 1 0 0 1 0 0 0 0 0 1 1 0 0 1 0 1 1 0\n";
         assertEquals(4, Main.test(text));
     }
+    @Test
+    public void test20() {
+        String text = "4 4\n" +
+                "0 1 1 1\n" +
+                "0 1 1 1\n" +
+                "1 1 1 1\n" +
+                "0 0 1 1\n";
+        assertEquals(4, Main.test(text));
+    }
+    @Test
+    public void test21() {
+        String text = "4 3\n" +
+                "0 1 1 1\n" +
+                "0 1 1 1\n" +
+                "1 0 1 1\n";
+        assertEquals(12, Main.test(text));
+    }
+    @Test
+    public void test22() {
+        String text = "3 4\n" +
+                "0 1 1\n" +
+                "0 1 1\n" +
+                "1 1 1\n" +
+                "0 0 1\n";
+        assertEquals(12, Main.test(text));
+    }
+    @Test
+    public void test23() {
+        String text = "100 100\n";
+        for (int i = 0; i < 100; i++) {
+            text += " 1".repeat(100).substring(1) + "\n";
+        }
+        assertEquals(10000, Main.test(text));
+    }
 
 }

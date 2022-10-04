@@ -46,58 +46,67 @@
       <module name="HHPR2_1.1" />
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="MainTest" />
+      <option name="METHOD_NAME" value="" />
       <option name="TEST_OBJECT" value="class" />
+      <option name="VM_PARAMETERS" value="-ea -Xmx65m" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="MainTest.test17" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="MainTest.test20" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="HHPR2_1.1" />
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="MainTest" />
-      <option name="METHOD_NAME" value="test17" />
+      <option name="METHOD_NAME" value="test20" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="MainTest.test18" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="MainTest.test21" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="HHPR2_1.1" />
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="MainTest" />
-      <option name="METHOD_NAME" value="test18" />
+      <option name="METHOD_NAME" value="test21" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="MainTest.test19" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="MainTest.test22" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="HHPR2_1.1" />
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="MainTest" />
-      <option name="METHOD_NAME" value="test19" />
+      <option name="METHOD_NAME" value="test22" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="MainTest.test3" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="MainTest.test23" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="HHPR2_1.1" />
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="MainTest" />
-      <option name="METHOD_NAME" value="test3" />
+      <option name="METHOD_NAME" value="test23" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <list>
+      <item itemvalue="JUnit.MainTest" />
+      <item itemvalue="JUnit.MainTest.test20" />
+      <item itemvalue="JUnit.MainTest.test21" />
+      <item itemvalue="JUnit.MainTest.test22" />
+      <item itemvalue="JUnit.MainTest.test23" />
+    </list>
     <recent_temporary>
       <list>
         <item itemvalue="JUnit.MainTest" />
-        <item itemvalue="JUnit.MainTest.test18" />
-        <item itemvalue="JUnit.MainTest.test3" />
-        <item itemvalue="JUnit.MainTest.test19" />
-        <item itemvalue="JUnit.MainTest.test17" />
+        <item itemvalue="JUnit.MainTest.test23" />
+        <item itemvalue="JUnit.MainTest.test22" />
+        <item itemvalue="JUnit.MainTest.test21" />
+        <item itemvalue="JUnit.MainTest.test20" />
       </list>
     </recent_temporary>
   </component>
@@ -117,25 +126,24 @@
       <option name="project" value="LOCAL" />
       <updated>1664795453256</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="d2">
+      <created>1664875097389</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1664875097389</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="d1" />
-    <option name="LAST_COMMIT_MESSAGE" value="d1" />
+    <MESSAGE value="d2" />
+    <option name="LAST_COMMIT_MESSAGE" value="d2" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
-        <line-breakpoint enabled="true" type="java-method">
-          <url>file://$PROJECT_DIR$/src/test/java/MainTest.java</url>
-          <line>63</line>
-          <properties class="MainTest" method="test8">
-            <option name="EMULATED" value="true" />
-            <option name="WATCH_EXIT" value="false" />
-          </properties>
-          <option name="timeStamp" value="23" />
-        </line-breakpoint>
         <line-breakpoint enabled="true" type="java-method">
           <url>file://$PROJECT_DIR$/src/test/java/MainTest.java</url>
           <line>113</line>
@@ -147,12 +155,12 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-method">
           <url>file://$PROJECT_DIR$/src/test/java/MainTest.java</url>
-          <line>244</line>
-          <properties class="MainTest" method="test18">
+          <line>376</line>
+          <properties class="MainTest" method="test20">
             <option name="EMULATED" value="true" />
             <option name="WATCH_EXIT" value="false" />
           </properties>
-          <option name="timeStamp" value="49" />
+          <option name="timeStamp" value="52" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/Main.java</url>
@@ -164,22 +172,11 @@
           <line>87</line>
           <option name="timeStamp" value="44" />
         </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/Main.java</url>
-          <line>101</line>
-          <option name="timeStamp" value="48" />
-        </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
-    <watches-manager>
-      <configuration name="JUnit">
-        <watch expression="x" />
-        <watch expression="y" />
-      </configuration>
-    </watches-manager>
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/HHPR2_1_1$MainTest_test18.ic" NAME="MainTest.test18 Coverage Results" MODIFIED="1664874173403" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
-    <SUITE FILE_PATH="coverage/HHPR2_1_1$MainTest.ic" NAME="MainTest Coverage Results" MODIFIED="1664794924854" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
+    <SUITE FILE_PATH="coverage/HHPR2_1_1$MainTest.ic" NAME="MainTest Coverage Results" MODIFIED="1664878573341" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
   </component>
 </project>
