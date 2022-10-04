@@ -105,7 +105,7 @@ public class Main {
         if (x > region.getMaxX()) region.setMaxX(x);
         if (y < region.getMinY()) region.setMinY(y);
         if (y > region.getMaxY()) region.setMaxY(y);
-
+        System.out.println();
         region = checkPlace(matrix, x - 1, y, region); //вверх
         region = checkPlace(matrix, x + 1, y, region); //вниз
         region = checkPlace(matrix, x, y - 1, region); //влево
