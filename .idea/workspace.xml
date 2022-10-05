@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="307a9fee-db11-4e7f-9cf4-cf187c13f4e1" name="Changes" comment="">
+    <list default="true" id="307a9fee-db11-4e7f-9cf4-cf187c13f4e1" name="Changes" comment="d4">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Main.java" afterDir="false" />
     </list>
@@ -67,12 +67,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="MainTest.test21" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="MainTest.test17" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="HHPR2_1.1" />
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="MainTest" />
-      <option name="METHOD_NAME" value="test21" />
+      <option name="METHOD_NAME" value="test17" />
       <option name="TEST_OBJECT" value="method" />
+      <option name="VM_PARAMETERS" value="-ea -Xmx65m" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -98,19 +99,19 @@
       </method>
     </configuration>
     <list>
+      <item itemvalue="JUnit.MainTest.test17" />
       <item itemvalue="JUnit.MainTest.test1" />
       <item itemvalue="JUnit.MainTest" />
-      <item itemvalue="JUnit.MainTest.test21" />
       <item itemvalue="JUnit.MainTest.test22" />
       <item itemvalue="JUnit.MainTest.test23" />
     </list>
     <recent_temporary>
       <list>
         <item itemvalue="JUnit.MainTest" />
+        <item itemvalue="JUnit.MainTest.test17" />
         <item itemvalue="JUnit.MainTest.test1" />
         <item itemvalue="JUnit.MainTest.test23" />
         <item itemvalue="JUnit.MainTest.test22" />
-        <item itemvalue="JUnit.MainTest.test21" />
       </list>
     </recent_temporary>
   </component>
@@ -207,17 +208,17 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/Main.java</url>
-          <line>150</line>
+          <line>136</line>
           <option name="timeStamp" value="39" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/Main.java</url>
-          <line>139</line>
+          <line>125</line>
           <option name="timeStamp" value="57" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/Main.java</url>
-          <line>140</line>
+          <line>126</line>
           <option name="timeStamp" value="58" />
         </line-breakpoint>
       </breakpoints>

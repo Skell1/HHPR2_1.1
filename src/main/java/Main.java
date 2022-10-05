@@ -1,4 +1,5 @@
 import java.util.ArrayList;
+import java.util.List;
 import java.util.Scanner;
 
 class Cell {
@@ -62,8 +63,8 @@ public class Main {
     }
 
     private static Region checkPlace2(String[][] matrix, int x, int y) {
-        ArrayList<Cell> a = new ArrayList<>();
-        a.add(new Cell(x,y));
+        ArrayList<Cell> cells = new ArrayList<>();
+        cells.add(new Cell(x,y));
 
         int xLength = matrix.length;
         int yLength = matrix[0].length;
@@ -71,8 +72,8 @@ public class Main {
         int minX = x,minY = y, maxX = x, maxY = y;
         int area = 0;
 
-        while (!a.isEmpty()) {
-            Cell cell = a.remove(0);
+        while (!cells.isEmpty()) {
+            Cell cell = cells.remove(0);
             x = cell.getX();
             y = cell.getY();
 
@@ -88,39 +89,17 @@ public class Main {
             area+=1;
             matrix[x][y] = "0";
 
-            Cell up = new Cell(x+1,y);
-            Cell down = new Cell(x-1,y);
-            Cell left = new Cell(x,y-1);
-            Cell right = new Cell(x,y+1);
-            Cell upLeft = new Cell(x+1,y-1);
-            Cell upRight = new Cell(x+1,y+1);
-            Cell downLeft = new Cell(x-1,y-1);
-            Cell downRight = new Cell(x-1,y+1);
+            cells.add(new Cell(x+1,y));
+            cells.add(new Cell(x-1,y));
+            cells.add(new Cell(x,y-1));
+            cells.add(new Cell(x,y+1));
+            cells.add(new Cell(x+1,y-1));
+            cells.add(new Cell(x+1,y+1));
+            cells.add(new Cell(x-1,y-1));
+            cells.add(new Cell(x-1,y+1));
 
-            if (!(up.getX() < 0 || up.getY() < 0 || up.getX() >= xLength || up.getY() >= yLength || matrix[up.getX()][up.getY()].equals("0"))) {
-                a.add(up);
-            }
-            if (!(down.getX() < 0 || down.getY() < 0 || down.getX() >= xLength || down.getY() >= yLength || matrix[down.getX()][down.getY()].equals("0"))) {
-                a.add(down);
-            }
-            if (!(left.getX() < 0 || left.getY() < 0 || left.getX() >= xLength || left.getY() >= yLength || matrix[left.getX()][left.getY()].equals("0"))) {
-                a.add(left);
-            }
-            if (!(right.getX() < 0 || right.getY() < 0 || right.getX() >= xLength || right.getY() >= yLength || matrix[right.getX()][right.getY()].equals("0"))) {
-                a.add(right);
-            }
-            if (!(upLeft.getX() < 0 || upLeft.getY() < 0 || upLeft.getX() >= xLength || upLeft.getY() >= yLength || matrix[upLeft.getX()][upLeft.getY()].equals("0"))) {
-                a.add(upLeft);
-            }
-            if (!(upRight.getX() < 0 || upRight.getY() < 0 || upRight.getX() >= xLength || upRight.getY() >= yLength || matrix[upRight.getX()][upRight.getY()].equals("0"))) {
-                a.add(upRight);
-            }
-            if (!(downLeft.getX() < 0 || downLeft.getY() < 0 || downLeft.getX() >= xLength || downLeft.getY() >= yLength || matrix[downLeft.getX()][downLeft.getY()].equals("0"))) {
-                a.add(downLeft);
-            }
-            if (!(downRight.getX() < 0 || downRight.getY() < 0 || downRight.getX() >= xLength || downRight.getY() >= yLength || matrix[downRight.getX()][downRight.getY()].equals("0"))) {
-                a.add(downRight);
-            }
+            removeNonMutchingCell(cells,matrix);
+
 
         }
         int totalArea = (maxX-minX+1)*(maxY-minY+1);
@@ -128,6 +107,13 @@ public class Main {
         return new Region(efficiency,totalArea,area);
     }
 
+    private static void removeNonMutchingCell(List<Cell> cells, String[][] matrix){
+        cells.removeIf(cell -> cellDoesNotMatch(cell,matrix));
+    }
+
+    private static boolean cellDoesNotMatch(Cell cell, String[][] matrix){
+        return cell.getX() < 0 || cell.getY() < 0 || cell.getX() >= matrix.length || cell.getY() >= matrix[0].length || matrix[cell.getX()][cell.getY()].equals("0");
+    }
     public static int findRegion(String[][] matrix) {
         int xLength = matrix.length;
         if (xLength == 0) return 0;
