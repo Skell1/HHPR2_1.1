@@ -437,5 +437,44 @@ public class MainTest {
                 "1 1 0 0 0 0 0 0 1 1";
         assertEquals(4, Main.test(text));
     }
+    @Test
+    public void test26() {
+        String text = "2 2\n" +
+                "1 1\n" +
+                "1 1";
+        assertEquals(4, Main.test(text));
+    }
+    @Test
+    public void test27() {
+        String text = "2 2\n" +
+                "0 0\n" +
+                "0 1";
+        assertEquals(0, Main.test(text));
+    }
+    @Test
+    public void test28() {
+        String text = "2 2\n" +
+                "0 0\n" +
+                "1 0";
+        assertEquals(0, Main.test(text));
+    }
+    @Test
+    public void test29() {
+        String text = "2 2\n" +
+                "0 1\n" +
+                "0 0";
+        assertEquals(0, Main.test(text));
+    }
+    @Test
+    public void test30() {
+        String text = "6 6\n" +
+                "1 1 1 0 0 0\n" +
+                "1 1 0 0 0 0\n" +
+                "0 0 0 0 0 0\n" +
+                "1 1 1 1 1 0\n" +
+                "1 1 1 1 0 1\n" +
+                "0 0 0 0 0 0";
+        assertEquals(12, Main.test(text));
+    }
 
 }

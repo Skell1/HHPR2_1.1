@@ -1,3 +1,5 @@
+import java.math.BigDecimal;
+import java.math.RoundingMode;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;
@@ -20,10 +22,10 @@ class Cell {
 }
 class Region {
     private int area = 0;
-    private double efficiency = 0;
+    private BigDecimal efficiency = BigDecimal.ZERO;
     private int totalArea = 0;
 
-    public Region(double efficiency, int totalArea, int area) {
+    public Region(BigDecimal efficiency, int totalArea, int area) {
         this.efficiency = efficiency;
         this.totalArea = totalArea;
         this.area = area;
@@ -36,7 +38,7 @@ class Region {
         return area;
     }
 
-    public double getEfficiency() {
+    public BigDecimal getEfficiency() {
         return efficiency;
     }
 
@@ -62,7 +64,7 @@ public class Main {
         System.out.println(findRegion(map));
     }
 
-    private static Region checkPlace2(String[][] matrix, int x, int y) {
+    private static Region checkPlace(String[][] matrix, int x, int y) {
         ArrayList<Cell> cells = new ArrayList<>();
         cells.add(new Cell(x,y));
 
@@ -103,7 +105,9 @@ public class Main {
 
         }
         int totalArea = (maxX-minX+1)*(maxY-minY+1);
-        double efficiency = (double) area / totalArea;
+        BigDecimal efficiency = new BigDecimal(area).divide(new BigDecimal(totalArea), 13, RoundingMode.HALF_UP);
+        //double efficiency = (double) area / totalArea;
+        //BigDecimal bigDecimal = new BigDecimal(efficiency).setScale(13, RoundingMode.HALF_UP);
         return new Region(efficiency,totalArea,area);
     }
 
@@ -123,18 +127,19 @@ public class Main {
         for (int i = 0; i < xLength; i++) {
             for (int j = 0; j < yLength; j++) {
                 if (matrix[i][j].equals("1")) {
-                    Region curReg = checkPlace2(matrix, i, j);
+                    Region curReg = checkPlace(matrix, i, j);
                     if (curReg.getArea() >= 2) {
-                        if (curReg.getEfficiency() > region.getEfficiency()) {
+                        if (curReg.getEfficiency().compareTo(region.getEfficiency()) > 0) {
+                            //if (curReg.getEfficiency() > region.getEfficiency()) {
                             region = curReg;
-                        } else if (curReg.getTotalArea() > region.getTotalArea() && curReg.getEfficiency()==region.getEfficiency()) {
+                        } else if (curReg.getTotalArea() > region.getTotalArea() && curReg.getEfficiency().compareTo(region.getEfficiency())==0) {
                             region = curReg;
                         }
                     }
                 }
             }
         }
-        return region.getEfficiency() > 0 ? region.getTotalArea() : 0;
+        return region.getEfficiency()!=BigDecimal.ZERO ? region.getTotalArea() : 0;
     }
     //}
     public static int test(String text) {
