@@ -46,7 +46,7 @@
     &quot;last_opened_file_path&quot;: &quot;C:/Users/Fentrix&quot;
   }
 }</component>
-  <component name="RunManager" selected="JUnit.MainTest">
+  <component name="RunManager" selected="JUnit.MainTest.test32">
     <configuration name="MainTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="HHPR2_1.1" />
       <option name="PACKAGE_NAME" value="" />
@@ -58,60 +58,60 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="MainTest.test15" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="MainTest.test25" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="HHPR2_1.1" />
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="MainTest" />
-      <option name="METHOD_NAME" value="test15" />
+      <option name="METHOD_NAME" value="test25" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="MainTest.test26" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="MainTest.test31" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="HHPR2_1.1" />
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="MainTest" />
-      <option name="METHOD_NAME" value="test26" />
+      <option name="METHOD_NAME" value="test31" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="MainTest.test27" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="MainTest.test32" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="HHPR2_1.1" />
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="MainTest" />
-      <option name="METHOD_NAME" value="test27" />
+      <option name="METHOD_NAME" value="test32" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="MainTest.test30" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="MainTest.test4" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="HHPR2_1.1" />
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="MainTest" />
-      <option name="METHOD_NAME" value="test30" />
+      <option name="METHOD_NAME" value="test4" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <list>
-      <item itemvalue="JUnit.MainTest.test15" />
-      <item itemvalue="JUnit.MainTest.test26" />
-      <item itemvalue="JUnit.MainTest.test27" />
-      <item itemvalue="JUnit.MainTest.test30" />
+      <item itemvalue="JUnit.MainTest.test25" />
+      <item itemvalue="JUnit.MainTest.test31" />
+      <item itemvalue="JUnit.MainTest.test32" />
+      <item itemvalue="JUnit.MainTest.test4" />
       <item itemvalue="JUnit.MainTest" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.MainTest.test32" />
+        <item itemvalue="JUnit.MainTest.test31" />
         <item itemvalue="JUnit.MainTest" />
-        <item itemvalue="JUnit.MainTest.test15" />
-        <item itemvalue="JUnit.MainTest.test30" />
-        <item itemvalue="JUnit.MainTest.test27" />
-        <item itemvalue="JUnit.MainTest.test26" />
+        <item itemvalue="JUnit.MainTest.test25" />
+        <item itemvalue="JUnit.MainTest.test4" />
       </list>
     </recent_temporary>
   </component>
@@ -166,7 +166,14 @@
       <option name="project" value="LOCAL" />
       <updated>1664951196415</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="d7">
+      <created>1664957539169</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1664957539169</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -199,7 +206,8 @@
     <MESSAGE value="d4" />
     <MESSAGE value="d5" />
     <MESSAGE value="d6" />
-    <option name="LAST_COMMIT_MESSAGE" value="d6" />
+    <MESSAGE value="d7" />
+    <option name="LAST_COMMIT_MESSAGE" value="d7" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -224,13 +232,13 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/Main.java</url>
-          <line>141</line>
-          <option name="timeStamp" value="39" />
+          <line>136</line>
+          <option name="timeStamp" value="62" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/Main.java</url>
-          <line>130</line>
-          <option name="timeStamp" value="60" />
+          <line>113</line>
+          <option name="timeStamp" value="65" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

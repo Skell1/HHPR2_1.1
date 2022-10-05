@@ -476,5 +476,24 @@ public class MainTest {
                 "0 0 0 0 0 0";
         assertEquals(12, Main.test(text));
     }
-
+    @Test
+    public void test31() {
+        String text = "6 5\n" +
+                "1 1 1 1 1 1\n" +
+                "1 0 0 0 0 1\n" +
+                "1 0 0 0 0 1\n" +
+                "1 0 1 0 0 1\n" +
+                "1 0 0 1 0 1";
+        assertEquals(30, Main.test(text));
+    }
+    @Test
+    public void test32() {
+        String text = "6 5\n" +
+                "1 1 1 0 0 0\n" +
+                "1 0 0 0 0 0\n" +
+                "1 0 1 0 0 0\n" +
+                "0 0 1 1 0 0\n" +
+                "0 0 0 0 0 0";
+        assertEquals(9, Main.test(text));
+    }
 }

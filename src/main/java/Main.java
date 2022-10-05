@@ -72,7 +72,6 @@ public class Main {
         int yLength = matrix[0].length;
 
         int minX = x,minY = y, maxX = x, maxY = y;
-        int area = 0;
 
         while (!cells.isEmpty()) {
             Cell cell = cells.remove(0);
@@ -84,12 +83,11 @@ public class Main {
             if (y<minY) minY = y;
             if (y>maxY) maxY = y;
 
-            if (x < 0 || y < 0 || x >= xLength || y >= yLength || matrix[x][y].equals("0")) {
+            if (x < 0 || y < 0 || x >= xLength || y >= yLength || matrix[x][y].equals("0") || matrix[x][y].equals("2")) {
                 continue;
             }
 
-            area+=1;
-            matrix[x][y] = "0";
+            matrix[x][y] = "2";
 
             cells.add(new Cell(x+1,y));
             cells.add(new Cell(x-1,y));
@@ -105,6 +103,14 @@ public class Main {
 
         }
         int totalArea = (maxX-minX+1)*(maxY-minY+1);
+        int area = 0;
+        for (int i = minX; i <= maxX; i++) {
+            for (int j = minY; j <= maxY; j++) {
+                if (matrix[i][j].equals("1") || matrix[i][j].equals("2")){
+                    area+=1;
+                }
+            }
+        }
         BigDecimal efficiency = new BigDecimal(area).divide(new BigDecimal(totalArea), 13, RoundingMode.HALF_UP);
         //double efficiency = (double) area / totalArea;
         //BigDecimal bigDecimal = new BigDecimal(efficiency).setScale(13, RoundingMode.HALF_UP);
@@ -130,7 +136,6 @@ public class Main {
                     Region curReg = checkPlace(matrix, i, j);
                     if (curReg.getArea() >= 2) {
                         if (curReg.getEfficiency().compareTo(region.getEfficiency()) > 0) {
-                            //if (curReg.getEfficiency() > region.getEfficiency()) {
                             region = curReg;
                         } else if (curReg.getTotalArea() > region.getTotalArea() && curReg.getEfficiency().compareTo(region.getEfficiency())==0) {
                             region = curReg;
